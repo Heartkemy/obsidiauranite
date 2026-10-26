@@ -5,14 +5,72 @@
 # Re-fetch sources: make fetch
 set -euo pipefail
 cd "$(dirname "$0")"
+source ./sources.lock
 
 OUT=theme.css
 
+verify_sha256() {
+  local expected="$1"
+  local file="$2"
+  local actual
+  actual="$(shasum -a 256 "$file" | awk '{print $1}')"
+  [[ "$actual" == "$expected" ]] || {
+    printf 'sha256 mismatch for %s: expected %s, got %s\n' "$file" "$expected" "$actual" >&2
+    exit 1
+  }
+}
+
+extract_between() {
+  local start="$1"
+  local end="$2"
+  local source="$3"
+  awk -v start="$start" -v end="$end" '
+    $0 == start {
+      if (found) {
+        print "duplicate extraction start boundary: " start > "/dev/stderr"
+        failed = 1
+        exit
+      }
+      found = 1
+      emit = 1
+    }
+    emit && $0 == end {
+      closed = 1
+      exit
+    }
+    emit { print }
+    END {
+      if (!found) {
+        print "missing extraction start boundary: " start > "/dev/stderr"
+        exit 1
+      }
+      if (!closed) {
+        print "missing extraction end boundary: " end > "/dev/stderr"
+        exit 1
+      }
+      if (failed) exit 1
+    }
+  ' "$source"
+}
+
+emit_notices() {
+  printf '/**\n'
+  printf ' * Obsidiauranite generated CSS — full original and upstream notices follow.\n *\n'
+  awk 'NF { print " * " $0; next } { print " *" }' LICENSE
+  printf ' *\n'
+  awk 'NF { print " * " $0; next } { print " *" }' THIRD_PARTY_LICENSES.md
+  printf ' */\n\n'
+}
+
+verify_sha256 "$OBSIDIANITE_VENDOR_SHA256" _obsidianite.css
+verify_sha256 "$THINGS_SHA256" _things.css
+
 {
+emit_notices
 cat <<'HEADER'
 /** ---------------------------------------------------------------
 **  Obsidiauranite  —  Obsidianite, recolored to the Aura palette · Things checkboxes
-**  Personal theme by iPurpl3x. MIT. Built from three MIT sources:
+**  Original work © 2026 iPurpl3x and Heartkemy. Full notices appear above.
 **    • Base + all styling . Obsidianite     (c) 2020 Guo Xiang        github.com/bennyxguo/Obsidian-Obsidianite
 **    • Checkboxes ......... Things / Minimal (c) 2020-2021 Stephan Ango (@kepano)  github.com/colineckert/obsidian-things
 **    • Color palette ...... Aura            (c) 2023 possibly matt / daltonmenezes  github.com/possibly-not/obsidian-aura-theme
@@ -49,17 +107,17 @@ body.theme-dark {
 }
 ADD
 
-# 3) Things checkbox styling (vendored). Credit: Things (@colineckert) / Minimal (@kepano).
+# 3) Things checkbox styling (vendored). Boundaries intentionally fail when
+# upstream selectors/comments move, instead of silently extracting line ranges.
 echo ""
 echo "/** ==============================================================="
 echo "**  THINGS CHECKBOXES — vendored from colineckert/obsidian-things"
 echo "**  Original credit: Minimal theme (@kepano). MIT."
 echo "** =============================================================== */"
 echo ""
-echo "/* Completed checkboxes */"
-sed -n '532,539p' _things.css
+extract_between '/* Completed checkboxes */' '/* Image card */' _things.css
 echo ""
-sed -n '896,1196p' _things.css
+extract_between '/* Checkbox styling & icons. Credit Minimal theme: https://minimal.guide/Block+types/Checklists#Checkbox+styling */' '/* Progress bars styling. Credit Minimal theme: https://minimal.guide/progress-bars */' _things.css
 
 # 4) OBSIDIAURANITE TWEAKS — user-directed color/placement adjustments on top of
 #    the recolored base. Appended last so they win. Grouped by request.
@@ -339,8 +397,4 @@ mark a:hover, mark .internal-link:hover, mark .external-link:hover,
 TWK
 } > "$OUT"
 
-# Deploy into the vault for live iteration (BRAT folder name).
-VAULT="/Users/rafaelhorvat/Nexus/.obsidian/themes/Obsidiauranite"
-mkdir -p "$VAULT"
-cp "$OUT" manifest.json "$VAULT"/
-echo "Built $OUT ($(wc -l < "$OUT") lines) + deployed to vault"
+echo "Built $OUT ($(wc -l < "$OUT") lines)"

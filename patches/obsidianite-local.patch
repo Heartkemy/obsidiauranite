@@ -1,0 +1,21 @@
+--- _obsidianite.css
++++ _obsidianite.css
+@@ -515,2 +515,3 @@
+-.HyperMD-header {
+-  padding: 20px;
++.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header {
++  padding-top: 20px !important;
++  padding-bottom: 20px !important;
+@@ -1030 +1031,2 @@
+-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote::before {
++.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote::before,
++.markdown-preview-view blockquote + blockquote::before {
+@@ -1033,0 +1036,5 @@
++.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ .HyperMD-quote)::after,
++.markdown-preview-view blockquote:has(+ blockquote)::after {
++  display: none;
++}
++
+@@ -1064 +1071 @@
+-  left: -1.8rem;
++  left: -2.4rem;

@@ -1,0 +1,2365 @@
+/**
+ * Obsidiauranite generated CSS — full original and upstream notices follow.
+ *
+ * MIT License
+ *
+ * Copyright (c) 2026 iPurpl3x
+ * Copyright (c) 2026 Heartkemy
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * # Third-party notices
+ *
+ * The root [LICENSE](LICENSE) applies only to original Obsidiauranite files.
+ * Vendored or derived upstream CSS keeps the notices below. `build.sh` embeds this
+ * file and the root license in generated `theme.css`, so a copied standalone CSS
+ * file retains the required terms.
+ *
+ * ## Build inputs and provenance
+ *
+ * | Component | Immutable source | Local handling |
+ * | --- | --- | --- |
+ * | Obsidianite | [`35d3ba897806957e5b13edb950c6b25e5ce4f5c5`](https://github.com/bennyxguo/Obsidian-Obsidianite/tree/35d3ba897806957e5b13edb950c6b25e5ce4f5c5) | SHA-256 verified, then the tracked `patches/obsidianite-local.patch` preserves three intentional local fixes. |
+ * | Things | [`9b8bef93d3919f7693ac78597beaa35bbbd4cfff`](https://github.com/colineckert/obsidian-things/tree/9b8bef93d3919f7693ac78597beaa35bbbd4cfff) | SHA-256 verified. Named selector boundaries, rather than line numbers, select the emitted checkbox rules. |
+ * | Aura palette source | [`cdabb1167f7b8507adcb04e7132005f653c2ba17`](https://github.com/possibly-not/obsidian-aura-theme/tree/cdabb1167f7b8507adcb04e7132005f653c2ba17) | Palette values adapted in `palette.sed`; no Aura stylesheet is fetched at build time. |
+ * | Aura origin | [`20924aa0a43975420edd0e0b2f919e07a3eff9c9`](https://github.com/daltonmenezes/aura-theme/tree/20924aa0a43975420edd0e0b2f919e07a3eff9c9) | Listed because the Aura theme credits this origin. |
+ *
+ * The vendored Obsidianite source also embeds a Dracula/Prism block. Its header
+ * names Gustavo Costa and Jon Leopard and says MIT; the exact historical source
+ * revision cannot be established from that embedded header alone. This file
+ * preserves those names and the MIT grant instead of claiming a stronger chain of
+ * provenance. `_things.css` also contains a vendored Prism One Dark block that is
+ * not emitted into `theme.css`; its notice remains here because the source file is
+ * distributed in this repository.
+ *
+ * ---
+ *
+ * ## Obsidianite — https://github.com/bennyxguo/Obsidian-Obsidianite
+ *
+ * ```text
+ * MIT License
+ *
+ * Copyright (c) 2020 Guo Xiang
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ```
+ *
+ * ---
+ *
+ * ## Things — https://github.com/colineckert/obsidian-things
+ *
+ * ```text
+ * MIT License
+ *
+ * Copyright (c) 2020-2021 Stephan Ango (@kepano)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ```
+ *
+ * ---
+ *
+ * ## Minimal — https://github.com/kepano/obsidian-minimal
+ *
+ * The emitted Things section directly credits Minimal. The current upstream
+ * notice preserves the same author identity:
+ *
+ * ```text
+ * MIT License
+ *
+ * Copyright (c) 2020-2024 Steph Ango (@kepano)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ```
+ *
+ * ---
+ *
+ * ## Aura palette — https://github.com/possibly-not/obsidian-aura-theme
+ *
+ * ```text
+ * MIT License
+ *
+ * Copyright (c) 2023 possibly matt
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ```
+ *
+ * ---
+ *
+ * ## Aura origin — https://github.com/daltonmenezes/aura-theme
+ *
+ * ```text
+ * MIT License
+ *
+ * Copyright (c) 2021 - * Dalton Menezes
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ```
+ *
+ * ---
+ *
+ * ## Dracula Prism syntax theme — embedded in Obsidianite
+ *
+ * The vendored header identifies **Gustavo Costa** as author, **Jon Leopard** as
+ * contributor, and `@license MIT 2016-2018`. The current Prism project remains
+ * MIT-licensed; this notice preserves the names and MIT grant carried by the
+ * vendored block.
+ *
+ * ```text
+ * MIT License
+ *
+ * Copyright (c) 2016-2018 Gustavo Costa
+ * Contributor: Jon Leopard
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ```
+ *
+ * ---
+ *
+ * ## Prism One Dark — vendored in Things, not emitted
+ *
+ * `_things.css` credits [AGMStudio/prism-theme-one-dark](https://github.com/AGMStudio/prism-theme-one-dark). The file remains vendored, so its MIT notice is
+ * retained even though the current build does not emit that section.
+ *
+ * ```text
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2016 Adrián
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ * ```
+ */
+
+/** ---------------------------------------------------------------
+**  Obsidiauranite  —  Obsidianite, recolored to the Aura palette · Things checkboxes
+**  Original work © 2026 iPurpl3x and Heartkemy. Full notices appear above.
+**    • Base + all styling . Obsidianite     (c) 2020 Guo Xiang        github.com/bennyxguo/Obsidian-Obsidianite
+**    • Checkboxes ......... Things / Minimal (c) 2020-2021 Stephan Ango (@kepano)  github.com/colineckert/obsidian-things
+**    • Color palette ...... Aura            (c) 2023 possibly matt / daltonmenezes  github.com/possibly-not/obsidian-aura-theme
+**  Obsidianite's design is unchanged — only color VALUES are remapped (palette.sed).
+**  Generated by build.sh — do not hand-edit; change palette.sed or the ADDITIONS block.
+** --------------------------------------------------------------- */
+
+/** ---------------------------------------------------------------
+**  ██████╗ ██████╗ ███████╗██╗██████╗ ██╗ █████╗ ███╗   ██╗██╗████████╗███████╗
+** ██╔═══██╗██╔══██╗██╔════╝██║██╔══██╗██║██╔══██╗████╗  ██║██║╚══██╔══╝██╔════╝
+** ██║   ██║██████╔╝███████╗██║██║  ██║██║███████║██╔██╗ ██║██║   ██║   █████╗
+** ██║   ██║██╔══██╗╚════██║██║██║  ██║██║██╔══██║██║╚██╗██║██║   ██║   ██╔══╝
+** ╚██████╔╝██████╔╝███████║██║██████╔╝██║██║  ██║██║ ╚████║██║   ██║   ███████╗
+**  ╚═════╝ ╚═════╝ ╚══════╝╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚══════╝
+**  —— Version 2.1.0
+**  —— Made with 💎 by Benny Guo
+** Changes Log @see: https://github.com/bennyxguo/Obsidian-Obsidianite/blob/main/CHANGELOG.md
+** --------------------------------------------------------------- */
+
+/******************************************
+   Currently only comes in dark theme,
+   Light theme is still working in progress,
+   but it wil come soon or later.
+******************************************/
+
+/* .theme-light {
+  --background-primary: #fbfbfb;
+  --background-primary-alt: #fbfbfb;
+  --background-secondary: #fbfbfb;
+  --background-secondary-alt: #2d2b3a;
+  --text-normal: #333;
+  --text-faint: #b2b2b2;
+  --text-title-h1: #333;
+  --text-title-h2: #333;
+  --text-title-h3: #333;
+  --text-title-h4: #333;
+  --text-title-h5: #333;
+  --text-link: #b4b4b4;
+  --text-a: #ff6767;
+  --text-a-hover: #ff6767;
+  --text-mark: #61ffca;
+  --pre-code: #ffffff;
+  --interactive-accent: #92a1a1;
+  --interactive-before: #5e6565;
+  --background-modifier-border: #92a1a17a;
+  --blockquote-border: #ff6767;
+  --tag-background: rgba(162, 119, 255, 0.15);
+  --interactive-accent-rgb: 61, 215, 251;
+  --font-family-editor: Avenir, 'Avenir Next';
+  --font-family-preview: Avenir, 'Avenir Next';
+} */
+
+.theme-dark {
+  --background-primary: #15141b;
+  --background-primary-alt: #110f18;
+  --background-secondary: #1c1b22;
+  --background-secondary-alt: #110f18;
+  --text-normal: #edecee;
+  --text-accent: #a277ff;
+  --text-sub-accent: #f694ff;
+  --text-dim: #82aaff;
+  --text-faint: #82aaff;
+  --text-title-h1: var(--text-accent);
+  --text-title-h2: #edecee;
+  --text-title-h3: #edecee;
+  --text-title-h4: #edecee;
+  --text-title-h5: #edecee;
+  --text-link: #b4b4b4;
+  --text-a: #a277ff;
+  --text-a-hover: #a277ff;
+  --text-mark: #3d375e;
+  --code-background: var(--background-secondary);
+  --interactive-accent: rgba(162, 119, 255, 0.5);
+  --interactive-accent-hover: rgba(162, 119, 255, 0.8);
+  --interactive-before: #5e6565;
+  --blockquote-border: #a277ff;
+  --tag-background: rgba(162, 119, 255, 0.15);
+  --interactive-accent-rgb: #a277ff;
+  --font-family-editor: 'Rubik';
+  --font-family-preview: 'Rubik';
+  --bg-sub-accent-55: rgba(246, 148, 255, 0.55);
+  --bg-accent-55: rgba(162, 119, 255, 0.55);
+  --bg-accent-25: rgba(162, 119, 255, 0.25);
+  --text-highlight-bg: rgba(246, 148, 255, 0.25);
+  --background-modifier-border: rgba(162, 119, 255, 0.05);
+  --table-border-color: rgb(162, 119, 255, 0.15);
+  --test-color: rgb(130, 170, 255);
+  --editor-border-color: #110f18;
+}
+
+/******************************************
+**   ██████╗██╗   ██╗███████╗████████╗ ██████╗ ███╗   ███╗██╗███████╗███████╗
+**  ██╔════╝██║   ██║██╔════╝╚══██╔══╝██╔═══██╗████╗ ████║██║╚══███╔╝██╔════╝
+** ██║     ██║   ██║███████╗   ██║   ██║   ██║██╔████╔██║██║  ███╔╝ █████╗
+** ██║     ██║   ██║╚════██║   ██║   ██║   ██║██║╚██╔╝██║██║ ███╔╝  ██╔══╝
+** ╚██████╗╚██████╔╝███████║   ██║   ╚██████╔╝██║ ╚═╝ ██║██║███████╗███████╗
+**  ╚═════╝ ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚═╝╚══════╝╚══════╝
+** —— You can customized the theme using the variables below
+******************************************/
+
+:root {
+  /***************************************/
+  /*    FONTS RELATED                    */
+  /***************************************/
+
+  /** Font Customization **/
+  --default-font: 'Rubik', 'Glow Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+
+  --default-font-size: 18px;
+
+  /** Main text font weight **/
+  --body-font-weight: 450;
+
+  /** Font family for hash-tags **/
+  --tag-font-family: 'OperatorMonoSSmLig-Book', 'Glow Sans SC', '华文细黑', 'STXihei', 'PingFang TC',
+    '微软雅黑体', 'Microsoft YaHei New', '微软雅黑', 'Microsoft Yahei', '宋体', 'SimSun',
+    'Helvetica Neue', 'Helvetica', Arial, sans-serif !important;
+
+  /** Font specially for codes **/
+  --code-mono-font: 'OperatorMonoSSmLig-Book';
+}
+
+/**-------------------**
+| CUSTOMIZED TAG COLOURS
+**--------------------**/
+
+/* For preview mode */
+a.tag[href*='#todo'],
+a.tag[href*='#待完成'] {
+  background-color: #ff6767;
+  color: #fff;
+}
+/* For Editor Mode */
+.cm-s-obsidian .CodeMirror-line span.cm-tag-todo:not(.cm-formatting-hashtag) {
+  color: #f694ff;
+}
+
+a.tag[href*='#working-draft'],
+a.tag[href*='#进行中'] {
+  background-color: #a277ff;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-working-draft:not(.cm-formatting-hashtag) {
+  color: #af8aff;
+}
+
+a.tag[href*='#notes'],
+a.tag[href*='#笔记'] {
+  background-color: #61ffca;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-notes:not(.cm-formatting-hashtag) {
+  color: #61ffca;
+}
+
+a.tag[href*='#knowledge'],
+a.tag[href*='#知识'] {
+  background-color: #82aaff;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-knowledge:not(.cm-formatting-hashtag) {
+  color: #82aaff;
+}
+
+a.tag[href*='#writing'],
+a.tag[href*='#文章'] {
+  background-color: #ff6767;
+  color: #fff;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-writing:not(.cm-formatting-hashtag) {
+  color: #ff6767;
+}
+
+a.tag[href*='#ideas'],
+a.tag[href*='#想法'] {
+  background-color: #ffca85;
+  color: #000;
+}
+
+.cm-s-obsidian .CodeMirror-line span.cm-tag-ideas:not(.cm-formatting-hashtag) {
+  color: #ffe585;
+}
+
+/**************************************
+| GENERAL STYLES
+| -------------------------------------
+| Obsidian main controls related.
+/**************************************/
+
+::-webkit-scrollbar {
+  opacity: 1;
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-modifier-border);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background: var(--background-secondary);
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+  opacity: 0.7;
+}
+
+.titlebar {
+  background-color: var(--background-primary-alt);
+}
+
+.status-bar {
+  background-color: var(--background-primary-alt);
+  border-color: #110f18;
+  color: var(--text-faint);
+  position: absolute;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 8px;
+  padding: 8px 6px 6px 10px;
+  max-height: unset;
+
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
+.status-bar:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.titlebar-text {
+  color: var(--text-accent);
+}
+
+.theme-dark .notice {
+  background-color: var(--background-primary-alt);
+  color: var(--text-accent);
+}
+
+/** NAVIGATION / SIDE-DOCK **/
+.nav-file-title,
+.nav-folder-title {
+  border: 1px solid transparent;
+}
+
+.nav-folder-collapse-indicator {
+  color: var(--text-accent);
+}
+.nav-file.is-active > .nav-file-title,
+.nav-file.is-active > .nav-folder-title,
+.nav-file.is-active > .nav-folder-collapse-indicator,
+.nav-folder.is-active > .nav-file-title,
+.nav-folder.is-active > .nav-folder-title,
+.nav-folder.is-active > .nav-folder-collapse-indicator {
+  color: var(--text-accent);
+}
+
+/** Side-dock icons **/
+.side-dock-ribbon-tab,
+.side-dock-ribbon-action,
+.workspace-ribbon-collapse-btn,
+.workspace-tab-header {
+  transition: all 350ms ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.workspace-ribbon-collapse-btn:hover,
+.workspace-tab-header:hover {
+  opacity: 1;
+  color: var(--text-accent);
+}
+
+/** Left side menu -- collapsed **/
+.workspace-ribbon.is-collapsed {
+  background-color: var(--background-primary-alt);
+}
+/** Left side menu border **/
+.workspace-ribbon.mod-left.is-collapsed,
+.workspace-ribbon.mod-right.is-collapsed {
+  border-color: var(--editor-border-color);
+}
+
+/** Navigation tabs **/
+.is-focused .workspace-tab-header.is-active {
+  opacity: 1;
+}
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  background: var(--background-modifier-border);
+  color: var(--text-accent);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background: var(--background-secondary);
+  border: 1px solid var(--bg-accent-25);
+  color: var(--text-accent);
+}
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background: var(--background-modifier-border);
+  border: 1px solid var(--interactive-accent-hover);
+}
+
+/** Folder Lists **/
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  color: var(--text-accent);
+}
+/** Folder list active arrow **/
+body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
+body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
+  color: var(--text-accent);
+}
+/** Folder List main title **/
+.nav-folder.mod-root > .nav-file-title,
+.nav-folder.mod-root > .nav-folder-title {
+  color: var(--text-accent);
+}
+
+/** View Header title **/
+.workspace-leaf.mod-active .view-header-title {
+  color: var(--text-accent);
+}
+
+/** Little tag styles (at links) **/
+.pane-list-item:hover .pane-list-item-ending-flair {
+  background-color: var(--background-secondary);
+  color: var(--text-accent);
+}
+
+/** SETTINGS STYLES **/
+.checkbox-container.is-enabled {
+  background-color: rgba(162, 119, 255, 0.7);
+}
+
+.workspace-drop-overlay {
+  background-color: var(--background-primary-alt);
+}
+
+/* except list markers */
+span.cm-formatting-list,
+/*code block backticks */ span.cm-formatting-code-block.cm-hmd-codeblock,
+/* optionally header hashes */ span.cm-formatting-header {
+  display: inline !important;
+}
+
+/***************************************/
+/*    EDITOR GENERAL STYLES            */
+/***************************************/
+
+.markdown-source-view.mod-cm6 .task-list-label {
+  position: relative;
+  top: -2px;
+  padding-top: 0;
+}
+
+/* OBSIDIANITE CHECKBOXES */
+
+.contains-task-list .task-list-item .contains-task-list {
+  padding-inline-start: 5px;
+}
+
+.contains-task-list .task-list-item ul.contains-task-list::before {
+  left: -46px !important;
+  border-width: 2px;
+}
+
+.contains-task-list .task-list-item {
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.markdown-preview-view ul > li.task-list-item {
+  text-indent: -3em;
+}
+
+.contains-task-list .task-list-item input[type='checkbox'] {
+  position: relative;
+  top: 2px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 0;
+  z-index: 10;
+}
+
+.markdown-preview-view .list-collapse-indicator {
+  margin-left: -80px !important;
+  box-sizing: border-box;
+}
+
+.contains-task-list .task-list-item::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  border: 2px solid #9e9e9e;
+  margin-right: 15px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.contains-task-list .is-checked.task-list-item::before {
+  border: 10px solid var(--text-accent);
+  animation: bounce 300ms;
+}
+
+.contains-task-list .is-checked.task-list-item::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -21px;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checked-box 125ms 250ms forwards;
+  z-index: 5;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked {
+  text-decoration: line-through !important;
+  color: var(--interactive-accent) !important;
+}
+
+.markdown-preview-view ul > li.task-list-item.is-checked ul > li:not(.is-checked) {
+  text-decoration: none !important;
+  color: var(--text-normal) !important;
+}
+
+@keyframes checked-box {
+  0% {
+    width: 0;
+    height: 0;
+    border-color: #1c1b22;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  33% {
+    width: 4px;
+    height: 0;
+    border-color: #1c1b22;
+    transform: translate(0, 0) rotate(45deg);
+  }
+  100% {
+    width: 4px;
+    height: 8px;
+    border-color: #1c1b22;
+    transform: translate(0, -8px) rotate(45deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    border-width: 2px;
+    /* transform: scale(1); */
+  }
+  33% {
+    border-width: 4px;
+    /* transform: scale(0.7); */
+  }
+  100% {
+    border-width: 10px;
+    /* transform: scale(1); */
+  }
+}
+
+/**************************************
+| MAIN EDITOR / PREVIEW MODE
+| -------------------------------------
+| Write in the same section to keep them
+| relatively sync with css.
+/**************************************/
+
+/**-------------------**
+| HEADING STYLES
+**--------------------**/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--default-font);
+  font-weight: 600;
+}
+
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6 {
+  border-bottom: 1px solid;
+  border-width: 1px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, var(--text-sub-accent), #15141b, #15141b, #15141b);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.markdown-preview-section h1,
+.cm-header-1 {
+  font-size: 34px;
+  color: var(--text-title-h1);
+}
+
+.markdown-preview-section h2,
+.cm-header-2 {
+  font-size: 26px;
+  color: var(--text-title-h2);
+}
+
+.markdown-preview-section h3,
+.cm-header-3 {
+  font-size: 22px;
+  color: var(--text-title-h3);
+}
+
+.markdown-preview-section h4,
+.cm-header-4 {
+  font-size: 18px;
+  color: var(--text-title-h4);
+}
+
+.markdown-preview-section h5,
+.cm-header-5 {
+  font-size: 18px;
+  color: var(--text-title-h5);
+}
+
+.markdown-preview-section h6,
+.cm-header-6 {
+  font-size: 18px;
+  color: var(--text-title-h5);
+}
+
+/** headings */
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  /* padding-top: 1.25rem; */
+  margin: 45px 0 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-width: 35%;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, var(--text-sub-accent), #15141b, #15141b, #15141b);
+}
+
+.view-header-icon {
+  color: var(--text-accent);
+}
+
+/** Adding different # colors **/
+
+.cm-formatting.cm-formatting-header.cm-header {
+  color: var(--text-accent);
+  opacity: 0.45;
+}
+
+/**-------------------**
+| HR STYLES
+**--------------------**/
+
+/** hr styles -- PREVIEW MODE */
+.cm-line hr,
+.markdown-preview-view hr {
+  margin-block-start: 4em;
+  margin-block-end: 4em;
+  border: none;
+  height: 0;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+}
+
+.cm-line hr::after,
+.markdown-preview-view hr::after {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 0.5rem;
+  color: var(--text-sub-accent);
+  background-color: var(--background-primary);
+}
+
+/**-------------------**
+| STRONG/BOLD STYLES
+**--------------------**/
+
+.cm-strong,
+strong {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  color: #82aaff;
+  background-color: #82aaff;
+  background-image: linear-gradient(62deg, #82aaff 0%, #af8aff 100%) !important;
+}
+
+strong .math.math-inline .MathJax {
+  position: inherit !important;
+}
+
+.cm-strong .cm-selection,
+strong::selection {
+  -webkit-text-fill-color: var(--text-faint);
+}
+
+/**-------------------**
+| <KBD> STYLING
+**--------------------**/
+
+.cm-strong kbd,
+strong kbd {
+  -webkit-text-fill-color: initial;
+}
+
+/**-------------------**
+| ITALIC STYLES
+**--------------------**/
+
+.cm-em,
+em {
+  color: #a277ff !important;
+  font-family: OperatorMonoSSmLig-Book, Rubik, var(--default-font) !important;
+}
+
+.cm-em.cm-formatting-em {
+  display: inline-flex;
+  width: 0.45rem;
+  font-size: 0.6rem;
+  vertical-align: text-top;
+}
+
+/**-------------------**
+| LISTING STYLES (ul, li, ol)
+**--------------------**/
+
+.cm-s-obsidian span.cm-formatting-list {
+  color: var(--text-accent);
+}
+
+.markdown-source-view.mod-cm6 .cm-indent::before {
+  border-width: 2px;
+  border-color: var(--text-accent);
+  margin-left: -1px;
+  opacity: 0.35;
+  transition: opacity 500ms linear ease-in-out;
+}
+
+.markdown-source-view.mod-cm6 .cm-active-indent::before {
+  opacity: 0.8;
+}
+
+/**-------------------**
+| LINKS STYLING
+**--------------------**/
+
+/** editor mode **/
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
+  color: var(--text-normal);
+  -webkit-text-fill-color: var(--text-normal);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 5px 5px;
+  text-decoration: none;
+}
+
+cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline {
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-sub-accent-55) 0%,
+    var(--bg-sub-accent-55) 100%
+  );
+}
+
+.cm-s-obsidian span.cm-formatting-link {
+  color: var(--text-faint) !important;
+  opacity: 0.25;
+}
+
+/** preview mode **/
+.external-link {
+  padding: 0;
+}
+
+.internal-link,
+.external-link {
+  color: var(--text-normal);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 5px 5px;
+  text-decoration: none;
+  transition: background 350ms ease-in-out;
+}
+
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.external-link {
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-sub-accent-55) 0%,
+    var(--bg-sub-accent-55) 100%
+  );
+  transition: background 350ms ease-in-out;
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
+.internal-link {
+  background-image: linear-gradient(to bottom, var(--bg-accent-55) 0%, var(--bg-accent-55) 100%);
+  transition: background 350ms ease-in-out;
+}
+
+.internal-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline:hover {
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+  background-size: 4px 50px;
+  text-decoration-line: none !important;
+}
+
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline:hover,
+.external-link:hover {
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+  background-size: 4px 50px;
+  text-decoration-line: none !important;
+}
+
+/* link */
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link {
+  text-decoration: none !important;
+  color: var(--text-normal);
+  position: relative;
+  z-index: 1;
+}
+
+.cm-url {
+  color: var(--text-faint) !important;
+  opacity: 0.4;
+  font-weight: normal;
+}
+
+.cm-formatting-image {
+  color: var(--text-accent) !important;
+  opacity: 0.7;
+}
+
+/* link hover color */
+a:hover,
+.internal-link:hover {
+  text-decoration: none !important;
+  color: var(--text-accent);
+}
+
+/**-------------------**
+| TAG STYLING
+**--------------------**/
+
+.cm-s-obsidian span.cm-hashtag {
+  position: relative;
+  color: var(--text-accent);
+  opacity: 1;
+  font-family: var(--tag-font-family);
+  font-style: italic;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+.cm-s-obsidian span.cm-hashtag:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--text-accent);
+}
+
+.cm-s-obsidian span.cm-formatting-hashtag {
+  color: var(--text-faint);
+}
+
+/** tags */
+a.tag {
+  background-color: var(--tag-background);
+  color: var(--text-accent);
+  white-space: nowrap;
+  border-radius: var(--tag-radius);
+  padding: var(--tag-padding-y) var(--tag-padding-x);
+  font-family: var(--tag-font-family);
+  text-decoration: none;
+  font-style: italic;
+  font-size: 0.86rem;
+  font-weight: 500;
+}
+
+a.tag:hover {
+  border-color: var(--text-accent);
+  opacity: 1;
+  background-color: var(--tag-background) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--text-accent);
+}
+
+h1 a.tag,
+h2 a.tag,
+h3 a.tag,
+h4 a.tag,
+h5 a.tag,
+h6 a.tag {
+  font-size: inherit !important;
+}
+
+/**-------------------**
+| INLINE CODE STYLING
+**--------------------**/
+
+.CodeMirror-activeline
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
+    .obsidian-search-match-highlight
+  ) {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.cm-s-obsidian span.cm-inline-code {
+  color: rgba(162, 119, 255, 0.9) !important;
+}
+
+.cm-s-obsidian span.cm-inline-code.cm-formatting-code {
+  display: inline-flex;
+  min-width: 0.55rem;
+}
+
+/**-------------------**
+| HIGHLIGHTING STYLES
+**--------------------**/
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  background-image: none !important;
+  background-color: var(--text-highlight-bg);
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-background-clip: initial;
+}
+
+/**-------------------**
+| CODE FENCE STYLING
+**--------------------**/
+
+.cm-s-obsidian span.code-block-flair:not(:empty) {
+  color: var(--text-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  background: rgba(16, 14, 23, 0.86);
+  border-radius: 8px;
+  padding: 0.1em 0.8em;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+  color: var(--text-sub-accent);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: #1c1b22;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  border: none;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg:before {
+  position: absolute;
+  content: '';
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  margin-top: 1.5em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  background-color: #1c1b22;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border: none;
+}
+
+pre {
+  position: relative;
+}
+
+pre[class*='language-']:before {
+  font-family: Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: #fff;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  padding: 0;
+  color: var(--text-accent) !important;
+  content: '';
+  text-transform: uppercase;
+  background: rgba(16, 14, 23, 0.86);
+  border-radius: 8px;
+  padding: 0.1em 0.8em;
+  z-index: 10;
+}
+
+pre[class$='javascript']:before,
+pre[class$='js']:before {
+  content: 'JavaScript';
+}
+
+pre[class$='typescript']:before,
+pre[class$='ts']:before {
+  content: 'typescript';
+}
+
+pre[class$='html']:before {
+  content: 'html';
+}
+
+pre[class$='css']:before {
+  content: 'css';
+}
+
+pre[class$='ejs']:before {
+  content: 'ejs';
+}
+
+pre[class$='vue']:before {
+  content: 'vue';
+}
+
+pre[class$='react']:before {
+  content: 'react';
+}
+
+pre[class$='shell']:before {
+  content: 'Shell';
+}
+
+pre[class$='powershell']:before {
+  content: 'PowerShell';
+}
+
+pre[class$='json']:before {
+  content: 'Json';
+}
+
+pre[class$='python']:before {
+  content: 'python';
+}
+
+/**-------------------**
+| BLOCKQUOTE STYLING
+**--------------------**/
+
+/* Remove blockquote left margin */
+blockquote {
+  margin-inline-start: 0;
+}
+
+/* blockquote style overwrite */
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote,
+.markdown-preview-view blockquote {
+  position: relative;
+  padding: 1rem 2rem 1rem 3rem;
+  color: #bdbdbd;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 2em;
+  margin-right: 0 !important;
+  border-left: 3px rgba(162, 119, 255, 0.5) solid;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  background: linear-gradient(135deg, rgba(32, 28, 41, 0.45), #15141b);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before,
+.markdown-preview-view blockquote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 2px;
+  width: 60%;
+  background: linear-gradient(90deg, rgba(97, 255, 202, 0.5), #110f18);
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote::before,
+.markdown-preview-view blockquote + blockquote::before {
+  display: none;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ .HyperMD-quote)::after,
+.markdown-preview-view blockquote:has(+ blockquote)::after {
+  display: none;
+}
+
+.HyperMD-quote::after,
+.markdown-preview-view blockquote::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 2px;
+  width: 25%;
+  background: linear-gradient(90deg, rgba(97, 255, 202, 0.5), #15141b);
+}
+
+.HyperMD-quote.HyperMD-quote-2::before,
+.HyperMD-quote.HyperMD-quote-3::before,
+.HyperMD-quote.HyperMD-quote-4::before,
+.HyperMD-quote.HyperMD-quote-5::before {
+  height: 0;
+}
+
+.markdown-preview-view blockquote p {
+  position: relative;
+}
+
+.markdown-preview-view blockquote p:first-of-type::before {
+  content: '!!';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-accent);
+  position: absolute;
+  top: 0.1rem;
+  left: -2.4rem;
+}
+
+/**-------------------**
+| FRONT-META STYLING
+**--------------------**/
+
+.cm-s-obsidian span.cm-def,
+.cm-s-obsidian span.cm-atom {
+  color: var(--text-faint);
+}
+.cm-s-obsidian span.cm-meta {
+  color: var(--text-accent);
+}
+
+.cm-s-obsidian span.cm-string {
+  color: var(--text-sub-accent);
+}
+
+/**-------------------**
+| CODE STYLING
+**--------------------**/
+
+/** inline code */
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(
+    .obsidian-search-match-highlight
+  ),
+.markdown-preview-view code {
+  overflow-wrap: break-word;
+  background-color: rgba(162, 119, 255, 0.05);
+  word-wrap: break-word;
+  padding: 0 5px;
+  border-radius: 0.3rem;
+  color: rgba(162, 119, 255, 0.9) !important;
+}
+
+.theme-dark :not(pre) > code[class*='language-'],
+.theme-dark pre[class*='language-'] {
+  background-color: var(--background-secondary);
+}
+
+.markdown-preview-view img {
+  border-radius: 8px;
+}
+
+/** code syntax theme **/
+
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-comment {
+  color: #4a4658;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-string,
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-string-2 {
+  color: #ffe585;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-number {
+  color: #a277ff;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable {
+  color: #61ffca;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable-2 {
+  color: white;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-def {
+  color: #61ffca;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-operator {
+  color: #f694ff;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-keyword {
+  color: #f694ff;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-atom {
+  color: #a277ff;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-meta {
+  color: #edecee;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-tag {
+  color: #f694ff;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-attribute {
+  color: #61ffca;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-qualifier {
+  color: #61ffca;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-property {
+  color: #61ffca;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-builtin {
+  color: #61ffca;
+}
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-variable-3,
+.theme-dark .cm-s-obsidian pre.HyperMD-codeblock span.cm-type {
+  color: #ffca85;
+}
+
+/** prism.js dracular theme **/
+
+/*
+* Dracula Theme for Prism.JS
+*
+* @author Gustavo Costa
+* e-mail: gusbemacbe@gmail.com
+*
+* @contributor Jon Leopard
+* e-mail: jonlprd@gmail.com
+*
+* @license MIT 2016-2018
+*/
+
+pre::-webkit-scrollbar {
+  width: 14px;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  color: #ccc;
+  background: rgb(40, 41, 54);
+  text-shadow: none;
+  font-family: 'OperatorMonoSSmLig-Book', PT Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
+    monospace !important;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+  text-shadow: none;
+  background-color: #4a4658;
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+  text-shadow: none;
+  background-color: #4a4658;
+}
+
+@media print {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: rgba(40, 41, 54, 1);
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  padding: 4px 7px;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.limit-300 {
+  height: 300px !important;
+}
+
+.limit-400 {
+  height: 400px !important;
+}
+
+.limit-500 {
+  height: 500px !important;
+}
+
+.limit-600 {
+  height: 600px !important;
+}
+
+.limit-700 {
+  height: 700px !important;
+}
+
+.limit-800 {
+  height: 800px !important;
+}
+
+.theme-dark .token.comment {
+  color: rgba(98, 114, 164, 1);
+}
+
+.theme-dark .token.prolog {
+  color: rgba(207, 207, 194, 1);
+}
+
+.theme-dark .token.tag {
+  color: rgba(220, 104, 170, 1);
+}
+
+.theme-dark .token.entity {
+  color: rgba(139, 233, 253, 1);
+}
+
+.theme-dark .token.atrule {
+  color: rgba(98, 239, 117, 1);
+}
+
+.theme-dark .token.url {
+  color: rgba(102, 217, 239, 1);
+}
+
+.theme-dark .token.selector {
+  color: rgba(207, 207, 194, 1);
+}
+
+.theme-dark .token.string {
+  color: rgba(241, 250, 140, 1);
+}
+
+.theme-dark .token.property {
+  color: rgba(255, 184, 108, 1);
+}
+
+.theme-dark .token.important {
+  color: rgba(255, 121, 198, 1);
+  font-weight: bold;
+}
+
+.theme-dark .token.punctuation {
+  color: white;
+}
+
+.theme-dark .token.number {
+  color: rgba(189, 147, 249, 1);
+}
+
+.theme-dark .token.function {
+  color: rgba(80, 250, 123, 1);
+}
+
+.theme-dark .token.class-name {
+  color: rgba(255, 184, 108, 1);
+}
+
+.theme-dark .token.keyword {
+  color: rgba(255, 121, 198, 1);
+}
+
+.theme-dark .token.boolean {
+  color: rgba(255, 184, 108, 1);
+}
+
+.theme-dark .token.operator {
+  color: rgba(139, 233, 253, 1);
+}
+
+.theme-dark .token.char {
+  color: rgba(255, 135, 157, 1);
+}
+
+.theme-dark .token.regex {
+  color: rgba(80, 250, 123, 1);
+}
+
+.theme-dark .token.variable {
+  color: rgba(80, 250, 123, 1);
+}
+
+.theme-dark .token.constant {
+  color: rgba(255, 184, 108, 1);
+}
+
+.theme-dark .token.symbol {
+  color: rgba(255, 184, 108, 1);
+}
+
+.theme-dark .token.builtin {
+  color: rgba(255, 121, 198, 1);
+}
+
+.theme-dark .token.attr-value {
+  color: #61ffca;
+}
+
+.theme-dark .token.deleted {
+  color: #ff6767;
+}
+
+.theme-dark .token.namespace {
+  color: #ff6767;
+}
+
+.theme-dark .token.bold {
+  font-weight: bold;
+}
+
+.theme-dark .token.italic {
+  font-style: italic;
+}
+
+.theme-dark .token {
+  color: #f694ff;
+}
+
+.language-cpp .theme-dark .token.string {
+  color: #61ffca;
+}
+
+.language-c .theme-dark .token.string {
+  color: #61ffca;
+}
+
+.theme-dark .language-css .token.selector {
+  color: rgba(80, 250, 123, 1);
+}
+
+.theme-dark .language-css .token.property {
+  color: rgba(255, 184, 108, 1);
+}
+
+.language-java span.theme-dark .token.class-name {
+  color: #61ffca;
+}
+
+.language-java .theme-dark .token.class-name {
+  color: #61ffca;
+}
+
+.language-markup .theme-dark .token.attr-value {
+  color: rgba(102, 217, 239, 1);
+}
+
+.language-markup .theme-dark .token.tag {
+  color: rgba(80, 250, 123, 1);
+}
+
+.language-objectivec .theme-dark .token.property {
+  color: #61ffca;
+}
+
+.language-objectivec .theme-dark .token.string {
+  color: #61ffca;
+}
+
+.language-php .theme-dark .token.boolean {
+  color: #61ffca;
+}
+
+.language-php .theme-dark .token.function {
+  color: #f694ff;
+}
+
+.language-php .theme-dark .token.keyword {
+  color: #61ffca;
+}
+
+.language-ruby .theme-dark .token.symbol {
+  color: #61ffca;
+}
+
+.language-ruby .theme-dark .token.class-name {
+  color: #edecee;
+}
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+/** ===============================================================
+**  OBSIDIAURANITE ADDITIONS — Aura status palette for Things checkboxes
+** =============================================================== */
+.theme-dark,
+body.theme-dark {
+  --color-red: #ff6767;
+  --color-orange: #ffca85;
+  --color-yellow: #ffe585;
+  --color-green: #61ffca;
+  --color-cyan: #61ffca;
+  --color-blue: #82aaff;
+  --color-purple: #a277ff;
+  --color-pink: #f694ff;
+  --color-accent: #a277ff;
+  --checkbox-radius: 30%;
+  --indentation-guide-color: #a277ff66;
+  --indentation-guide-color-active: #a277ff;
+}
+
+/** ===============================================================
+**  THINGS CHECKBOXES — vendored from colineckert/obsidian-things
+**  Original credit: Minimal theme (@kepano). MIT.
+** =============================================================== */
+
+/* Completed checkboxes */
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='M'] {
+  text-decoration: none;
+  color: var(--text-faint);
+}
+
+
+/* Checkbox styling & icons. Credit Minimal theme: https://minimal.guide/Block+types/Checklists#Checkbox+styling */
+/* Support @kepano - https://www.buymeacoffee.com/kepano */
+/* ------------------- */
+
+input[data-task='!']:checked,
+input[data-task='*']:checked,
+input[data-task='-']:checked,
+input[data-task='<']:checked,
+input[data-task='>']:checked,
+input[data-task='I']:checked,
+input[data-task='b']:checked,
+input[data-task='c']:checked,
+input[data-task='d']:checked,
+input[data-task='f']:checked,
+input[data-task='k']:checked,
+input[data-task='l']:checked,
+input[data-task='p']:checked,
+input[data-task='u']:checked,
+input[data-task='w']:checked,
+input[data-task='P']:checked, /* Open PR */
+input[data-task='M']:checked, /* Merged PR */
+input[data-task='D']:checked, /* Draft PR */
+li[data-task='!'] > input:checked,
+li[data-task='!'] > p > input:checked,
+li[data-task='*'] > input:checked,
+li[data-task='*'] > p > input:checked,
+li[data-task='-'] > input:checked,
+li[data-task='-'] > p > input:checked,
+li[data-task='<'] > input:checked,
+li[data-task='<'] > p > input:checked,
+li[data-task='>'] > input:checked,
+li[data-task='>'] > p > input:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked,
+li[data-task='b'] > input:checked,
+li[data-task='b'] > p > input:checked,
+li[data-task='c'] > input:checked,
+li[data-task='c'] > p > input:checked,
+li[data-task='d'] > input:checked,
+li[data-task='d'] > p > input:checked,
+li[data-task='f'] > input:checked,
+li[data-task='f'] > p > input:checked,
+li[data-task='k'] > input:checked,
+li[data-task='k'] > p > input:checked,
+li[data-task='l'] > input:checked,
+li[data-task='l'] > p > input:checked,
+li[data-task='p'] > input:checked,
+li[data-task='p'] > p > input:checked,
+li[data-task='u'] > input:checked,
+li[data-task='u'] > p > input:checked,
+li[data-task='w'] > input:checked,
+li[data-task='w'] > p > input:checked,
+li[data-task='P'] > input:checked,
+li[data-task='P'] > p > input:checked,
+li[data-task='M'] > input:checked,
+li[data-task='M'] > p > input:checked,
+li[data-task='D'] > input:checked,
+li[data-task='D'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentColor;
+  -webkit-mask-size: var(--checkbox-icon);
+  -webkit-mask-position: 50% 50%;
+}
+input[data-task='>']:checked,
+li[data-task='>'] > input:checked,
+li[data-task='>'] > p > input:checked {
+  color: var(--text-faint);
+  transform: rotate(90deg);
+  -webkit-mask-position: 50% 100%;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+}
+input[data-task='<']:checked,
+li[data-task='<'] > input:checked,
+li[data-task='<'] > p > input:checked {
+  color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='?']:checked,
+li[data-task='?'] > input:checked,
+li[data-task='?'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  background-position: 50% 50%;
+  background-size: 200% 90%;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="white" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+}
+.theme-dark input[data-task='?']:checked,
+.theme-dark li[data-task='?'] > input:checked,
+.theme-dark li[data-task='?'] > p > input:checked {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+}
+input[data-task='/']:checked,
+li[data-task='/'] > input:checked,
+li[data-task='/'] > p > input:checked {
+  background-image: none;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+input[data-task='/']:checked:after,
+li[data-task='/'] > input:checked:after,
+li[data-task='/'] > p > input:checked:after {
+  top: 0;
+  left: 0;
+  content: ' ';
+  display: block;
+  position: absolute;
+  background-color: var(--color-accent);
+  width: calc(50% - 0.5px);
+  height: 100%;
+  -webkit-mask-image: none;
+}
+input[data-task='!']:checked,
+li[data-task='!'] > input:checked,
+li[data-task='!'] > p > input:checked {
+  color: var(--color-orange);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='"']:checked,
+input[data-task='“']:checked,
+li[data-task='"'] > input:checked,
+li[data-task='"'] > p > input:checked,
+li[data-task='“'] > input:checked,
+li[data-task='“'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  background-position: 50% 50%;
+  background-color: var(--color-cyan);
+  border-color: var(--color-cyan);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+}
+.theme-dark input[data-task='"']:checked,
+.theme-dark input[data-task='“']:checked,
+.theme-dark li[data-task='"'] > input:checked,
+.theme-dark li[data-task='"'] > p > input:checked,
+.theme-dark li[data-task='“'] > input:checked,
+.theme-dark li[data-task='“'] > p > input:checked {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+}
+input[data-task='-']:checked,
+li[data-task='-'] > input:checked,
+li[data-task='-'] > p > input:checked {
+  color: var(--text-faint);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+body:not(.tasks)
+  .markdown-preview-view
+  ul
+  li[data-task='-'].task-list-item.is-checked,
+body:not(.tasks)
+  .markdown-source-view.mod-cm6
+  .HyperMD-task-line[data-task]:is([data-task='-']),
+body:not(.tasks) li[data-task='-'].task-list-item.is-checked {
+  color: var(--text-faint);
+  text-decoration: line-through solid var(--text-faint) 1px;
+}
+input[data-task='*']:checked,
+li[data-task='*'] > input:checked,
+li[data-task='*'] > p > input:checked {
+  color: var(--color-yellow);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+}
+input[data-task='l']:checked,
+li[data-task='l'] > input:checked,
+li[data-task='l'] > p > input:checked {
+  color: var(--color-red);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='i']:checked,
+li[data-task='i'] > input:checked,
+li[data-task='i'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  background-position: 50%;
+  background-size: 100%;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="white" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+}
+.theme-dark input[data-task='i']:checked,
+.theme-dark li[data-task='i'] > input:checked,
+.theme-dark li[data-task='i'] > p > input:checked {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="black" fill-opacity="0.8" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+}
+input[data-task='S']:checked,
+li[data-task='S'] > input:checked,
+li[data-task='S'] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border-color: var(--color-green);
+  background-color: var(--color-green);
+  background-size: 100%;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill="white" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
+}
+.theme-dark input[data-task='S']:checked,
+.theme-dark li[data-task='S'] > input:checked,
+.theme-dark li[data-task='S'] > p > input:checked {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
+}
+input[data-task='I']:checked,
+li[data-task='I'] > input:checked,
+li[data-task='I'] > p > input:checked {
+  color: var(--color-yellow);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+}
+input[data-task='f']:checked,
+li[data-task='f'] > input:checked,
+li[data-task='f'] > p > input:checked {
+  color: var(--color-red);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='k']:checked,
+li[data-task='k'] > input:checked,
+li[data-task='k'] > p > input:checked {
+  color: var(--color-yellow);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='u']:checked,
+li[data-task='u'] > input:checked,
+li[data-task='u'] > p > input:checked {
+  color: var(--color-green);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='d']:checked,
+li[data-task='d'] > input:checked,
+li[data-task='d'] > p > input:checked {
+  color: var(--color-red);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='w']:checked,
+li[data-task='w'] > input:checked,
+li[data-task='w'] > p > input:checked {
+  color: var(--color-purple);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+input[data-task='p']:checked,
+li[data-task='p'] > input:checked,
+li[data-task='p'] > p > input:checked {
+  color: var(--color-green);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+}
+input[data-task='c']:checked,
+li[data-task='c'] > input:checked,
+li[data-task='c'] > p > input:checked {
+  color: var(--color-orange);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+}
+input[data-task='b']:checked,
+li[data-task='b'] > input:checked,
+li[data-task='b'] > p > input:checked {
+  color: var(--color-orange);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+}
+input[data-task='P']:checked,
+li[data-task='P'] > input:checked,
+li[data-task='P'] > p > input:checked {
+  color: var(--color-green);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+input[data-task='M']:checked,
+li[data-task='M'] > input:checked,
+li[data-task='M'] > p > input:checked {
+  color: var(--color-purple);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z'%3E%3C/path%3E%3C/svg%3E");
+}
+input[data-task='D']:checked,
+li[data-task='D'] > input:checked,
+li[data-task='D'] > p > input:checked {
+  color: var(--color-base-50);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M3.25 1A2.25 2.25 0 0 1 4 5.372v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.251 2.251 0 0 1 3.25 1Zm9.5 14a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5ZM2.5 3.25a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0ZM3.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm9.5 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM14 7.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm0-4.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+body:not(.tasks) li[data-task='>'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='<'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='b'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='i'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='*'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='!'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='S'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='?'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='/'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='"'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='l'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='I'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='p'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='c'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='f'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='k'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='w'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='u'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='d'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='P'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
+  color: var(--text-normal);
+}
+
+/* ------------------- */
+
+/** ===============================================================
+**  OBSIDIAURANITE TWEAKS
+** =============================================================== */
+
+/* --- Tabs: drop Obsidianite's stale/broken tab customization, use defaults --- */
+.workspace-tab-header { opacity: 1 !important; }
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* --- Blockquote: keep Obsidianite's ORIGINAL design (left border + top/bottom
+       accent bars + diagonal bg); only recolor to turquoise. The bars are
+       recolored via palette.sed (13,185,215 -> 97,255,202); here we retint the
+       left border (its literal is the shared purple accent). --- */
+.theme-dark { --blockquote-border: #61ffca; }
+.markdown-preview-view blockquote,
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  /* No text-indent here: in reading mode it is inherited by each child <p>
+     and outdents only the first line of every paragraph (misalignment).
+     25px padding alone aligns reading view. */
+  padding-inline-start: 25px !important;
+  /* Obsidian sets inline text-indent:-<marker-width> / padding-inline-start:
+     <marker-width> on quote lines (a matched pair that pulls the hidden ">"
+     into the padding). Overriding only the padding breaks the pair and
+     outdents the first line; zero the indent too — see hide-rule below. */
+  text-indent: 0 !important;
+  margin-block: 0 !important;
+  padding-block: 1rem !important;
+  border-left-color: #61ffca !important;
+  /* slight turquoise fade over the original diagonal bg */
+  background: linear-gradient(90deg, rgba(97, 255, 202, 0.05), transparent 55%),
+              linear-gradient(135deg, rgba(32, 28, 41, 0.45), #15141b) !important;
+}
+/* Live preview: hide the ">" formatting marker span. It is fully transparent
+   anyway; hiding it frees its width so the first text line lands on the same
+   25px as every wrapped continuation line and as reading view. Scoped to live
+   preview — raw source mode must keep its literal ">" characters visible.
+   (This Obsidian version has no .cm-blockquote-border span; the vertical
+   border is the theme's own border-left.) */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote .cm-formatting-quote {
+  display: none !important;
+}
+/* Live-preview: every quote source-line is its own element. Only the first
+   line of a run needs top padding, only the last needs bottom padding —
+   interior lines (incl. a blank ">" spacer) get none, flush together. */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote {
+  padding-top: 0 !important;
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:has(+ .HyperMD-quote) {
+  padding-bottom: 0 !important;
+}
+/* Top gap: reading mode separates a quote from the paragraph above via the
+   paragraph's 1rem margin; editor lines have no margins, so the top accent
+   bar sat flush against the preceding text. The gap lives as padding-bottom
+   on the PRECEDING line (padding, never margin: vertical margin on a .cm-line
+   desyncs CM6's height map -> cursor drift, v1.2.3). The quote box itself
+   stays untouched — bar flush at its top edge, no background lip above it. */
+.markdown-source-view.mod-cm6.is-live-preview
+  .cm-line:not(.HyperMD-quote):has(+ .HyperMD-quote) {
+  padding-bottom: 1rem;
+}
+/* Accent bars: start at FULL opacity (match the solid vertical line, no opacity
+   gap) and shift left 3px so they sit flush against the vertical line's edge */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before,
+.markdown-preview-view blockquote::before,
+.markdown-preview-view blockquote::after {
+  background: linear-gradient(90deg, #61ffca, transparent 66%) !important;
+  border-inline-start: none;
+  left: -3px !important;      /* flush with vertical line's inner edge, no corner nub */
+  width: 100% !important;     /* smooth full-width fade, no abrupt mid gap */
+  height: 3px !important;     /* match the 3px vertical line -> uniform thickness */
+}
+.HyperMD-quote::after {
+  background: linear-gradient(90deg, rgb(97, 255, 202), transparent 33%);
+  width: 100%;
+}
+.markdown-preview-view blockquote::before { top: 0 !important; }
+.markdown-preview-view blockquote::after { bottom: 0 !important; }
+.markdown-preview-view blockquote p:first-of-type::before { color: #61ffca; }
+
+/* --- Titles: keep original text color; ONLY the underline turns turquoise,
+       for both reading view (h*) and live preview (.HyperMD-header) --- */
+.markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4,
+.markdown-preview-view h5, .markdown-preview-view h6,
+.HyperMD-header.HyperMD-header-2, .HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4, .HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6 {
+  border-image-source: linear-gradient(to right, #61ffca, transparent 66%) !important;
+}
+
+/* --- Header underline (live preview): sit close to the text, breathing room
+       after it before the next block.
+       NEVER use vertical margin on a .cm-line: CodeMirror 6's height map is
+       built from line bounding rects, which exclude margin, so any margin
+       desyncs it and the cursor/selection overlays land on the wrong line
+       (drift accumulates down the document).
+       So the line keeps its full 20px padding-bottom and the underline is
+       drawn as a pseudo-element 14px above the padding edge — 6px under the
+       text, 14px after the line. The gap is inside the header, which means it
+       is there no matter what block follows (paragraph, quote, list, fence).
+       Reading view keeps the real border-bottom. --- */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-2,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-3,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-4,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-5,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-6 {
+  position: relative;
+  border-bottom: none !important;
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-2::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-3::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-4::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-5::after,
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-header.HyperMD-header-6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  height: 1px;
+  background: linear-gradient(to right, #61ffca, transparent 66%);
+  pointer-events: none;   /* clicks in the gap still reach the line */
+}
+
+/* --- <hr>: Obsidianite gives the <hr> inside a .cm-line 4em block margins.
+       Those collapse out through the line (no vertical padding/border to stop
+       them), so CodeMirror's height map is short by 8em at every rule and the
+       cursor drifts below it. Same rule as headers: padding on the line, not
+       margin on its child. Reading view keeps the margins.
+       2em not 4em: as margins these collapsed into one gap, as padding they
+       stack, so half each side reproduces the original spacing. --- */
+.markdown-source-view.mod-cm6 .cm-line:has(> hr) {
+  padding-block: 2em !important;
+}
+.markdown-source-view.mod-cm6 .cm-line > hr {
+  margin-block: 0 !important;
+}
+
+/* --- Bold: purple + turquoise gradient --- */
+.cm-strong, strong {
+  background-image: linear-gradient(62deg, #61ffca 0%, #a277ff 100%) !important;
+}
+
+/* --- Italic: keep the purple, drop Obsidianite's font-family override.
+       It asked for OperatorMonoSSmLig-Book, then Rubik, then --default-font,
+       which itself starts with Rubik and falls through to -apple-system. With
+       none of those installed every italic run silently rendered in the system
+       font instead of the vault's text font, so bold italic came out visibly
+       lighter than bold. Inheriting gives real Italic / Bold Italic faces. --- */
+.cm-em, em {
+  font-family: inherit !important;
+}
+
+/* --- Completed AND cancelled tasks: strike + faded PINK, matching the
+       external-link underline color (--bg-sub-accent-55) --- */
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='M'],
+.markdown-preview-view ul li[data-task='-'].task-list-item.is-checked,
+body:not(.tasks) li[data-task='-'].task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task='-']) {
+  color: var(--bg-sub-accent-55) !important;
+  text-decoration: line-through solid var(--bg-sub-accent-55) 1px !important;
+}
+
+/* --- Checkbox boxes: unchecked turquoise, completed [x] pink (= its text) --- */
+.theme-dark {
+  --checkbox-border-color: #61ffca;
+  --checkbox-color: var(--bg-sub-accent-55);
+  --checkbox-color-hover: var(--bg-sub-accent-55);
+  --checkbox-marker-color: #15141b;
+  --text-faint: #f694ff; /* pink; also fixes the cancelled [-] dash (uses --text-faint) */
+}
+.contains-task-list .task-list-item::before { border-color: #61ffca !important; }
+
+/* Cancelled [-] dash checkbox: match its TEXT's faded pink (--text-faint is
+   solid pink -> wrong alpha), so dash and text are identical */
+input[data-task='-']:checked,
+li[data-task='-'] > input:checked,
+li[data-task='-'] > p > input:checked {
+  color: var(--bg-sub-accent-55) !important;
+}
+
+/* In-progress [/] checkbox: turquoise outline, keep the rest */
+input[data-task='/'],
+li[data-task='/'] > input,
+li[data-task='/'] > p > input {
+  border-color: #61ffca !important;
+}
+
+/* --- Links: small underline at rest (original) with a 2px gap; on hover the
+       fill grows TALLER than the text (rises). !important on hover size so the
+       resting gap rule can't freeze the animation. --- */
+.internal-link, .external-link,
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline {
+  background-position: 0 calc(100% + 2px) !important;
+}
+.internal-link:hover, .external-link:hover,
+.cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline:hover,
+.cm-s-obsidian span.cm-hmd-internal-link .cm-underline:hover {
+  background-position: 0 100% !important;
+  background-size: 4px 50px !important;
+  /* vertical padding on an inline el paints the fill taller (like the
+     highlight) without reflowing the line */
+  padding: 2px 0 !important;
+}
+
+/* --- Highlight ==text==: flashy turquoise bg, dark text (needs
+       -webkit-text-fill-color to beat the theme's fill), taller top+bottom --- */
+mark, .markdown-rendered mark, .cm-s-obsidian .cm-highlight {
+  background-color: #61ffca !important;
+  color: #15141b !important;
+  -webkit-text-fill-color: #15141b !important;
+  padding: 0.15em 0.2em !important;
+  border-radius: 0px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* A link inside a highlight keeps the link's own white text, which is
+   unreadable on turquoise. Force the highlight's dark text instead — in both
+   nesting orders, and on hover, where the link rule pushes #fff. */
+mark a, mark .internal-link, mark .external-link,
+.cm-s-obsidian .cm-highlight .cm-underline,
+.cm-s-obsidian .cm-underline .cm-highlight,
+.cm-s-obsidian .cm-underline.cm-highlight,
+mark a:hover, mark .internal-link:hover, mark .external-link:hover,
+.cm-s-obsidian .cm-highlight .cm-underline:hover,
+.cm-s-obsidian .cm-underline:hover .cm-highlight,
+.cm-s-obsidian .cm-underline.cm-highlight:hover {
+  color: #15141b !important;
+  -webkit-text-fill-color: #15141b !important;
+}
+
+/* --- Bare URLs: .cm-url is both the bare URL and the (target) half of a
+       [text](target) link, and Obsidianite renders it at --text-faint / 0.4
+       opacity. --text-faint is pink here (it drives the cancelled-task dash),
+       so a bare URL came out as barely-legible faded pink. No fade at all. --- */
+.cm-url {
+  color: var(--text-muted) !important;
+  opacity: 1;
+}
+
+/* --- Print: bold/italic are gradients / colored via text-fill, which drop
+       out or clash on paper. Force them to plain black when printing. --- */
+@media print {
+  span.cm-strong,
+  strong {
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #000 !important;
+    color: #000;
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+  .cm-strong .cm-selection,
+  strong::selection {
+    -webkit-text-fill-color: none;
+  }
+  .cm-strong,
+  strong {
+    background-image: none !important;
+  }
+  em {
+    color: #000 !important;
+  }
+}

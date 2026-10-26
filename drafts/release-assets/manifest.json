@@ -1,0 +1,155 @@
+{
+  "status": "review-only drafts; no release, tag, or uploaded asset was created or changed",
+  "canonical_repository": "https://github.com/Heartkemy/obsidiauranite",
+  "replacements": [
+    {
+      "release_tag": "v1.0.0",
+      "version": "1.0.0",
+      "review_only": true,
+      "source": {
+        "theme_css": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.0.0/theme.css",
+          "sha256": "d018b78ab154d0f379fa21a7c41aa379cf0d522890166091ead4d9299d1dc4e4"
+        },
+        "manifest": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.0.0/manifest.json",
+          "sha256": "4ad00db84fd653954d210d3e02e4e63f220b6a5c2c92061492bfa55b395a1e3f"
+        }
+      },
+      "proposed": {
+        "theme_css": {
+          "path": "drafts/release-assets/v1.0.0/theme.css",
+          "sha256": "b2f63de809bf69318cc92cb04d2455e0b594c0ebc8120fb8c7c9e80e4a961de9"
+        },
+        "manifest": {
+          "path": "drafts/release-assets/v1.0.0/manifest.json",
+          "sha256": "41a39615ae993de6398d231362420af6e6620a6784d69527396a41dc35246716"
+        }
+      }
+    },
+    {
+      "release_tag": "v1.1.0",
+      "version": "1.1.0",
+      "review_only": true,
+      "source": {
+        "theme_css": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.1.0/theme.css",
+          "sha256": "bcd42f9da2b43e6b40d08771d4140f171b25cb96695246aa04e51139417a67bf"
+        },
+        "manifest": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.1.0/manifest.json",
+          "sha256": "bea6e681c63e2ee1f10e7c9d54c12de1f0f3d59cb5dad364386bde6e754dc0d7"
+        }
+      },
+      "proposed": {
+        "theme_css": {
+          "path": "drafts/release-assets/v1.1.0/theme.css",
+          "sha256": "819d7dd552e485449a988e4903105c0cb9709b1daf146ecffad14b5953da3a45"
+        },
+        "manifest": {
+          "path": "drafts/release-assets/v1.1.0/manifest.json",
+          "sha256": "571bb0801a4c8bc1e5dca8e19080c37fbd1e7ab2c725154b4b7b87f53bf36bfd"
+        }
+      }
+    },
+    {
+      "release_tag": "v1.2.0",
+      "version": "1.2.0",
+      "review_only": true,
+      "source": {
+        "theme_css": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.2.0/theme.css",
+          "sha256": "390dd56e6f63602ea283b99239b4108da3960b443cb7d9346fe03df6996d86e6"
+        },
+        "manifest": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.2.0/manifest.json",
+          "sha256": "4ce582d977dbcd9e1282a4ed0f97ff4a8a6f1e98a4f7f3d1af8a6d4fbed4eabc"
+        }
+      },
+      "proposed": {
+        "theme_css": {
+          "path": "drafts/release-assets/v1.2.0/theme.css",
+          "sha256": "ac97b144d3ed4c716977cb16236395c625166fc75a0f5024ce60990370dcb406"
+        },
+        "manifest": {
+          "path": "drafts/release-assets/v1.2.0/manifest.json",
+          "sha256": "d28fa31a2a69a5bb6b62fca74e3ffb2547421973781f8d7c1214b4afc525f034"
+        }
+      }
+    },
+    {
+      "release_tag": "v1.2.1",
+      "version": "1.2.1",
+      "review_only": true,
+      "source": {
+        "theme_css": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.2.1/theme.css",
+          "sha256": "603d6316e564f48744419d415b471ecd7eb393b37b7b86d82b3521815967d2b2"
+        },
+        "manifest": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/v1.2.1/manifest.json",
+          "sha256": "bf203f69c7c1ed191379e620d4f17f43d7d6195d151efc89fe526b1c8f70630c"
+        }
+      },
+      "proposed": {
+        "theme_css": {
+          "path": "drafts/release-assets/v1.2.1/theme.css",
+          "sha256": "12a034c7c943ec882fbb0c0366a60d91997b3aa55de1124b8bdea51726b8eb8c"
+        },
+        "manifest": {
+          "path": "drafts/release-assets/v1.2.1/manifest.json",
+          "sha256": "7c6059abb2f3afd24d2ac62082dbd30695a653c1e3f3c8dbe646d2893e2ad1d2"
+        }
+      }
+    },
+    {
+      "release_tag": "1.2.2",
+      "version": "1.2.2",
+      "review_only": true,
+      "source": {
+        "theme_css": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/1.2.2/theme.css",
+          "sha256": "fbda3c094825ede1febc89125809f70570441d26aad45da9ab8c8d5a602cc9a9"
+        },
+        "manifest": {
+          "url": "https://github.com/Heartkemy/obsidiauranite/releases/download/1.2.2/manifest.json",
+          "sha256": "d6c882f09b08e05fc2a8d0c2d08dcbebe6d0ade3059d3e56abcefe2192dea761"
+        }
+      },
+      "proposed": {
+        "theme_css": {
+          "path": "drafts/release-assets/1.2.2/theme.css",
+          "sha256": "643454ae459e93698aaea51def891c3abc9496a5bd8e17ff78477d65e102d415"
+        },
+        "manifest": {
+          "path": "drafts/release-assets/1.2.2/manifest.json",
+          "sha256": "c45b06ce2428f6cd2c022aae2ed946c92bcc9b407149e16374a1d866528eba88"
+        }
+      }
+    }
+  ],
+  "current_unreleased_draft": {
+    "version": "1.2.8",
+    "review_only": true,
+    "source": {
+      "workspace_build": {
+        "path": "theme.css",
+        "sha256": "2c28b508ffaaf3886e7dba9c60a31ce026cb6ee77c6ce8de6b5c36b5daeaea59"
+      }
+    },
+    "proposed": {
+      "theme_css": {
+        "path": "drafts/release-assets/1.2.8/theme.css",
+        "sha256": "2c28b508ffaaf3886e7dba9c60a31ce026cb6ee77c6ce8de6b5c36b5daeaea59"
+      },
+      "manifest": {
+        "path": "drafts/release-assets/1.2.8/manifest.json",
+        "sha256": "eb3b6ca49a1f9fd61001ec075cc84e3e009fb862752b18a301ccbb218895ad4c"
+      }
+    }
+  },
+  "known_gaps": [
+    "v1.2.6 has a GitHub Release with no uploaded manifest.json or theme.css.",
+    "v1.2.7 has a Git tag but no GitHub Release or uploaded assets."
+  ]
+}
